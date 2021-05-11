@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface CarRepository extends MongoRepository<Car, String> {
-    List<Car>getAllByAutomatic(boolean isAutomatic);
+    List<Car>getAllByAutomatic(boolean automatic);
 }

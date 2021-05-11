@@ -1,7 +1,6 @@
 package com.example.springdocker.controller;
 
 import com.example.springdocker.model.Car;
-import com.example.springdocker.repository.CarRepository;
 import com.example.springdocker.service.CarService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

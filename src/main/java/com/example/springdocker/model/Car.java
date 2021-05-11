@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class Car {
     String id;
     String model;
-    boolean isAutomatic;
+    boolean automatic;
 }
