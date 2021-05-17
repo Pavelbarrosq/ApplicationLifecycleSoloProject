@@ -15,7 +15,10 @@ public class CarService {
 
     public List<Car>getAllCars() { return repository.findAll(); }
 
-    public void saveNewCar(Car car) { repository.save(car); }
+    public Car saveNewCar(Car car) {
+        repository.save(car);
+        return car;
+    }
 
     public List<String> getAutomaticCars() {
         List<Car> automaticCars = repository.getAllByAutomatic(true);

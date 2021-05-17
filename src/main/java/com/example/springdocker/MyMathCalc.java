@@ -9,7 +9,10 @@ public class MyMathCalc {
         return a * b;
     }
 
-    public double divide(int a, int b ) {
+    public double divide(double a, double b ) {
+        if (a < 0 || b < 0) {
+            throw new IndexOutOfBoundsException("value can not be under 0");
+        }
         return a / b;
     }
 }
