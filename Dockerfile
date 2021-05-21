@@ -6,6 +6,4 @@ ARG JAR_FILE=target/*.jar
 
 COPY ${JAR_FILE} app.jar
 
-WORKDIR /javaFolder
-
 ENTRYPOINT ["java", "-jar", "app.jar"]
